@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#d2d2d1"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Useful Health Websites"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="1 - Cancer.gov – the official website for The National Cancer Institute (NCI)."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="2 - Centers for Disease Control and Prevention – The CDC website provides resources about diseases, conditions, and other special topics arranged under Health Topics A-Z, and Traveler’s Health."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="3 - FamilyDoctor.org – Operated by the American Academy of Family Physicians (AAFP), all of the information on this site has been written and reviewed by physicians and patient education professionals at the AAFP."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="4 - HealthFinder – The Department of Health and Human Services sponsors this gateway consumer health website, whose goal is to improve consumer access to selected health information from government agencies, their many partner organizations, and other reliable sources that serve the public interest."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="5 - HIV InSite – A project of the University of California San Francisco (UCSF), HIV InSite is designed as a gateway website linking patients to in-depth information about particular aspects of HIV/AIDS"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="6 - KidsHealth  – The Nemours Foundation sponsors this site, providing doctor-approved health information about children from before birth through adolescence."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="7 - MayoClinic – The Mayo Clinic has committed to providing patient education to the general public through this website. Editors of the site include more than 2,000 physicians, scientists, writers, and educators at the Mayo Clinic ."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="8 - MedlinePlus – MedlinePlus is the National Library of Medicine’s website for consumer health information. The site offers authoritative, up to date health information without advertisements."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="9 - NIH SeniorHealth – Sponsored by the National Institutes of Health, NIH Senior Health maintains a database of health information specifically geared toward older adults."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="10 - NOAH: New York Online Access to Health – Sponsored by New York State, NOAH’s mission is to provide high-quality, full-text information for consumers that is accurate, timely, relevant, and unbiased."/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

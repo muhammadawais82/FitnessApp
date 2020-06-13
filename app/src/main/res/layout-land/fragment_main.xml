@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#5affffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".55"
+        android:orientation="horizontal"
+        android:background="@drawable/h15">
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/health_icon"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Health and Fitness "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_gravity="center"
+                android:text="Providing Best Measures"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/sv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:touchscreenBlocksFocus="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="#cfeef1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="4dp">
+
+                    <Button
+                        android:id="@+id/btn_bmi"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="#2f94d7"
+                        android:text="Body Mass Index (BMI)"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/btn_bmr"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Basal Metabolic Rate"
+                        android:background="#2f94d7"
+                        android:textColor="#ffffff"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/btn_bmi"
+                        android:layout_toEndOf="@+id/btn_bmi" />
+
+                    <Button
+                        android:id="@+id/btn_bfp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Body Fat\nPercentage"
+                        android:background="#2f94d7"
+                        android:textColor="#ffffff"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/btn_bmr"
+                        android:layout_toEndOf="@+id/btn_bmr" />
+
+                    <Button
+                        android:id="@+id/btn_whr"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Waist To\nHeight Ratio"
+                        android:background="#2f94d7"
+                        android:textColor="#ffffff"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/btn_bfp"
+                        android:layout_toEndOf="@+id/btn_bfp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/btn_ebv"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_alignParentLeft="true"
+                        android:text="Body Blood Volume"
+                        android:background="#2f94d7"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/btn_dwi"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/btn_ebv"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:text="Daily Water Intake"
+                        android:background="#2f94d7"
+                        android:textColor="#ffffff"
+                        android:layout_alignParentTop="true" />
+
+                    <Button
+                        android:id="@+id/btn_ee"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_toRightOf="@+id/btn_dwi"
+                        android:text="Energy Expenditure"
+                        android:background="#2f94d7"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/btn_dfi"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_toRightOf="@+id/btn_ee"
+                        android:text="Daily Fats Intake"
+                        android:background="#2f94d7"
+                        android:textColor="#ffffff" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

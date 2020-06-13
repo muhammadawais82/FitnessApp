@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#b984c5d1"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".55"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/h15">
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/health_icon"/>
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health and Fitness "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Providing Best Measures"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/sv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:touchscreenBlocksFocus="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_bmibtn"
+                    android:background="#e62799e6"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Body Mass Index"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/h_line"
+                        android:alpha=".3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:textSize="11.5dp"
+                            android:layout_gravity="center_vertical|left"
+                            android:paddingRight="15dp"
+                            android:textColor="#ffffff"
+                            android:text="An approximate measure of whether someone is over or underweight, calculated by dividing their weight in kilograms by the square of their height in metres."/>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical|right"
+                            android:src="@drawable/bmi_logo"/>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_bmrbtn"
+                    android:layout_marginTop="10dp"
+                    android:background="#e62799e6"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Basal Metabolic Rate"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/h_line"
+                        android:alpha=".3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:textSize="11.5dp"
+                            android:layout_gravity="center_vertical|left"
+                            android:paddingRight="15dp"
+                            android:textColor="#ffffff"
+                            android:text="The rate at which the body uses energy while at rest to maintain vital functions such as breathing and keeping warm."/>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical|right"
+                            android:src="@drawable/bmr_logo2"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_bfpbtn"
+                    android:background="#e62799e6"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Body Fat Percentage"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/h_line"
+                        android:alpha=".3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:textSize="11.5dp"
+                            android:layout_gravity="center_vertical|left"
+                            android:paddingRight="15dp"
+                            android:textColor="#ffffff"
+                            android:text="The body fat percentage is a measure of fitness level, since it is the only body measurement which directly calculates a person's relative body composition without regard to height or weight."/>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical|right"
+                            android:src="@drawable/bfp_logo"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_ibwbtn"
+                    android:visibility="gone"
+                    android:background="#e62799e6"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:visibility="gone"
+                        android:text="Ideal Body Weight"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:visibility="gone"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/h_line"
+                        android:alpha=".3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        >
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:textSize="11.5dp"
+                            android:layout_gravity="center_vertical|left"
+                            android:paddingRight="15dp"
+                            android:textColor="#ffffff"
+                            android:text="Weight that is believed to be best for a healthful person, based chiefly on height but modified by factors such as gender, age, build, and degree of muscular development."/>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_vertical|right"
+                            android:src="@drawable/ibw_logo"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_dwibtn"
+                    android:visibility="gone"
+                    android:background="#e62799e6"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Daily Water Intake"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/h_line"
+                        android:alpha=".3"/>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:textSize="11.5dp"
+                            android:layout_gravity="center_vertical|left"
+                            android:paddingRight="15dp"
+                            android:textColor="#ffffff"
+                            android:text="This measure calculates the your daily water needs with respect to your weight. Other factors also effects on water intake of a person but here we only used weight for instant calculation."/>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_vertical|right"
+                            android:src="@drawable/dwi_logo"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_ebvbtn"
+                    android:background="#e62799e6"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Body Blood Volume"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/h_line"
+                        android:alpha=".3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        >
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:textSize="11.5dp"
+                            android:layout_gravity="center_vertical|left"
+                            android:paddingRight="15dp"
+                            android:textColor="#ffffff"
+                            android:text="This measure calculate the estimated blood volume of your body. Blood volume is the volume of blood (both red blood cells and plasma) in the circulatory system of any individual"/>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_vertical|right"
+                            android:src="@drawable/ebv_logo"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_ewvbtn"
+                    android:background="#e62799e6"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Body Water Volume"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/h_line"
+                        android:alpha=".3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:textSize="11.5dp"
+                            android:layout_gravity="center_vertical|left"
+                            android:paddingRight="15dp"
+                            android:textColor="#ffffff"
+                            android:text="This measure calculate the estimated water volume of your body. Body water is the water content of an human body that is contained in the tissues, the blood, the bones and elsewhere."/>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_vertical|right"
+                            android:src="@drawable/ewv_logo"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:gravity="center"-->
+        <!--android:background="#ffffff"-->
+        <!--android:layout_weight=".2"-->
+        <!--&gt;-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textAlignment="center"-->
+            <!--android:text="Ads Will Display Here"/>-->
+    <!--</LinearLayout>-->
+
+
+
+
+
+
+</LinearLayout>

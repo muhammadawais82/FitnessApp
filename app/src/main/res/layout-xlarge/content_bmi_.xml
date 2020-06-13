@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_allContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b11"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="logic2magic.com.health_fitness.BMI_Activity"
+    tools:showIn="@layout/bmi_layout">
+
+
+    <LinearLayout
+        android:id="@+id/ll_upper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_answer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".8"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:padding="0dp"
+                android:id="@+id/tv_bmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:text="YOUR BMI "
+                android:textColor="#000000"
+                android:alpha=".9" />
+
+            <TextView
+                android:padding="0dp"
+                android:id="@+id/tv_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:alpha=".9" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:alpha=".3"
+            android:background="@drawable/h_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_gender"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/man"
+                    android:alpha=".9"
+                    android:orientation="horizontal"/>
+
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/iv_gender_man"-->
+                <!--android:src="@drawable/man" />-->
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/iv_gender_woman"-->
+                <!--android:src="@drawable/woman" />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:alpha=".3"
+                android:background="@drawable/v_line">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_weightMeasuers"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Score Chart"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:alpha=".9"/>
+
+
+                <TextView
+                    android:id="@+id/tv_undrweight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Underweight         &lt;----20"
+                    android:textSize="14dp"
+                    android:textColor="#000000"
+                    android:alpha=".9" />
+                <TextView
+                    android:id="@+id/tv_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Normal                   20-25"
+                    android:textSize="14dp"
+                    android:textColor="#000000"
+                    android:alpha=".9" />
+                <TextView
+                    android:id="@+id/tv_overweight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Overweight            25-30"
+                    android:textSize="14dp"
+                    android:textColor="#000000"
+                    android:alpha=".9" />
+                <TextView
+                    android:id="@+id/tv_obese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Obese                     30-40"
+                    android:textSize="14dp"
+                    android:textColor="#000000"
+                    android:alpha=".9" />
+                <TextView
+                    android:id="@+id/tv_morbidlyobese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Morbidly Obese    40---&gt;"
+                    android:textSize="14dp"
+                    android:textColor="#000000"
+                    android:alpha=".9" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_question_And_Calculate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_questions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#50000000">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:layout_gravity="left|top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:layout_gravity="left|center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Height"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:layout_gravity="left|bottom">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:layout_gravity="center|top">
+
+                <EditText
+                    android:id="@+id/et_age"
+                    android:layout_width="80dp"
+                    android:layout_height="22dp"
+                    android:hint="YEAR"
+                    android:background="#46ffffff"
+                    android:textAlignment="center"
+                    android:inputType="number"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:layout_gravity="center|center">
+
+                <EditText
+                    android:id="@+id/et_height"
+                    android:layout_width="80dp"
+                    android:layout_height="22dp"
+                    android:hint="CM"
+                    android:background="#46ffffff"
+                    android:textAlignment="center"
+                    android:inputType="number"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:layout_gravity="center|bottom">
+
+                <EditText
+                    android:id="@+id/et_weight"
+                    android:layout_width="80dp"
+                    android:layout_height="22dp"
+                    android:hint="KG"
+                    android:background="#46ffffff"
+                    android:textAlignment="center"
+                    android:inputType="number"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:layout_gravity="right|top">
+
+                <ImageButton
+                    android:id="@+id/btn_male"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/male_select"/>
+
+                <ImageButton
+                    android:id="@+id/btn_female"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/female"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:layout_gravity="right|center">
+
+
+                <ToggleButton
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/tb_height"
+                    android:textOff=""
+                    android:textOn=""
+                    android:layout_gravity="center_vertical"
+                    android:checked="false"
+                    android:background="@drawable/switch_cm" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:layout_gravity="right|bottom">
+
+                <ToggleButton
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/tb_weight"
+                    android:textOff=""
+                    android:textOn=""
+                    android:layout_gravity="center_vertical"
+                    android:checked="true"
+                    android:background="@drawable/switch_kg"
+                    />
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="vertical"
+        android:background="#b4000000">
+
+        <Button
+            android:id="@+id/btn_cal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="1dp"
+            android:text="Calculate BMI"
+            android:onClick="cal_bmi"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#00689b"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <!--// Background Color #066b9b -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="17.65dp"
+        android:textStyle="bold"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/textunderline"
+        android:text="Calculate Calories &amp; Reduce Weight"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_marginLeft="6dp"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:id="@+id/et_age"
+                android:hint="ENTER AGE"
+                android:textAlignment="center"
+                android:background="@drawable/roundcorner"
+                android:textColorHint="#98c3f3"
+                android:textColor="#066b9b"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_male"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/male_select"/>
+
+            <ImageButton
+                android:id="@+id/btn_female"
+                android:layout_marginLeft="10dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/female"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_gravity="left"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:text="Age"/>-->
+
+                <EditText
+                    android:layout_marginLeft="6dp"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/et_height"
+                    android:hint="HEIGHT(CM)"
+                    android:textAlignment="center"
+                    android:background="@drawable/roundcorner"
+                    android:textColorHint="#98c3f3"
+                    android:textColor="#066b9b"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/tb_height"
+                    android:textOff=""
+                    android:textOn=""
+                    android:layout_gravity="center_vertical"
+                    android:checked="false"
+                    android:background="@drawable/switch_cm" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_gravity="left"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:text="Age"/>-->
+
+                <EditText
+                    android:layout_marginLeft="6dp"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/et_weight"
+                    android:hint="WEIGHT(KG)"
+                    android:textAlignment="center"
+                    android:background="@drawable/roundcorner"
+                    android:textColorHint="#98c3f3"
+                    android:textColor="#066b9b"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/tb_weight"
+                    android:textOff=""
+                    android:textOn=""
+                    android:layout_gravity="center_vertical"
+                    android:checked="true"
+                    android:background="@drawable/switch_kg"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Spinner
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:spinnerMode="dialog"
+            android:id="@+id/sp_activityLevel"
+            android:entries="@array/spinnerItems"
+            android:background="@drawable/spinner_image"
+            android:textAlignment="center"></Spinner>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/roundcorner_button"
+            android:text="Calaculate  Required  Calories"
+            android:id="@+id/btn_requiredCalories"
+            android:textSize="15.5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#ffffff"
+            android:id="@+id/tv_showRequiredCalories"
+            android:textSize="60dp"
+            android:textAlignment="center"
+            android:text="0.00"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/roundcorner_button"
+            android:text="Reduce/Gain Weight (Click Here)"
+            android:id="@+id/btn_reduceWeight"
+            android:textSize="15.5dp" />
+    </LinearLayout>
+</LinearLayout>

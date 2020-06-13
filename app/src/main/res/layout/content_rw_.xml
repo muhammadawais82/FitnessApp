@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="#00689b"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="logic2magic.com.health_fitness.RW_Activity"
+    tools:showIn="@layout/rw_layout">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/roundcorner_layout"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ll_receivedCalories">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Your Current Energy Expenditure"
+                android:textColor="#ffffff"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:id="@+id/tv_showReceived"
+                android:text="0.00 Calories"
+                android:textSize="24dp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/arrow2"
+            android:orientation="vertical"
+            android:id="@+id/ll_imgGoal"></LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundcorner_layout"
+            android:orientation="vertical"
+            android:id="@+id/ll_goal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:text="GOAL"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="Weight Loss"
+                    android:textSize="14.5dp"
+                    android:background="@drawable/roundcorner_button"
+                    android:id="@+id/btn_weightLoss" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="Maintain Weight"
+                    android:textSize="14.5dp"
+                    android:background="@drawable/roundcorner_button"
+                    android:id="@+id/btn_maintainWeight" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="Weight Gain"
+                    android:textSize="14.5dp"
+                    android:background="@drawable/roundcorner_button"
+                    android:id="@+id/btn_weightGain" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/arrow2"
+            android:orientation="vertical"
+            android:id="@+id/ll_imgIntensity"
+            android:visibility="gone"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundcorner_layout"
+            android:orientation="vertical"
+            android:id="@+id/ll_intensity"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:text="INTESITY"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="Suggested"
+                    android:textSize="13.5dp"
+                    android:background="@drawable/roundcorner_button"
+                    android:id="@+id/btn_suggested" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="Aggressive"
+                    android:textSize="13.5dp"
+                    android:background="@drawable/roundcorner_button"
+                    android:id="@+id/btn_aggressive" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="Reckless"
+                    android:textSize="13.5dp"
+                    android:background="@drawable/roundcorner_button"
+                    android:id="@+id/btn_reckless" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/arrow2"
+            android:orientation="vertical"
+            android:id="@+id/ll_imgRequiredEnergy"
+            android:visibility="gone"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/roundcorner_layout"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/ll_requiredEnergy"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Your Required Energy"
+                android:textColor="#ffffff"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:text="0.00 Calories"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:id="@+id/tv_showAnswer" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

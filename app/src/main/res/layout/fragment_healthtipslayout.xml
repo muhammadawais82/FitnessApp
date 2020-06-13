@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#d2d2d1"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Health Tips and Tricks"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="1. 'Start by drinking more water,' says Boots nutritionist Vicky Pennington. 'The body is made up of 70 per cent water and needs around 6 to 8 glasses a day to keep it hydrated and help flush out toxins'."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="2. 'Cut down on alcohol and caffeinated drinks, such as coffee, tea and cola,' says Vicky Pennington. 'These can all dehydrate the body.'"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="3. 'Avoid processed foods, while eating less meat, dairy, and sugary foods,' says Nina Omotoso, nutritional therapist at Revital. 'This will give your digestive system a well-earned break.'"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="4. 'Eat lots of vegetables and whole fruit, especially berries, pears, plums and apples,' says Nina Omotoso. 'Avoid fruit juices, though, as this will stop you from getting big sugar hits and will keep your energy levels stable.'"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="5. 'Go for raw nuts, seeds, avocados and pears to get essential healthy fats, which will slow down your digestion and give you more energy,' says Nina Omotoso. 'Chia seeds are also great because they're easily digested, and full of Omega 3 and protein.'"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="6. 'Wholegrains, such as oatmeal and brown rice, are essential to provide fibre and energy during your detox,' says Dr Sarah Brewer, author of The Total Detox Plan."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="7. 'Add cottage cheese to your list of detox essentials, along with probiotic yoghurt and drinks,' says Dr Sarah Brewer. 'These help to repopulate the bowel with bacteria that aid digestive health and play a role in boosting immunity.'"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="8. 'If you drink more than four caffeinated drinks a day, gradually cut back for a week or two before detoxing so you don't experience withdrawal symptoms, including headaches and irritability,' says Dr Sarah Brewer. "/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="9. 'For protein, eat more pulses including soy beans, chickpeas and lentils,' says Dr Sarah Brewer. 'If you want to eat meat, make sure it's fish or skinned chicken.'"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="10. 'Eat less salt,' says Evelyn Toner, specialist dietician at London Bridge Hospital. 'Even if you don't add salt to your meals, many foods are already high in salt.'"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="11. 'Start the day with hot water and fresh lemon, and give your body a little time to wake up before having breakfast,' says Yvonne McMeel, resident nutritionist at Urban Retreat, Harrods. 'Your digestive system will love you for this.'"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:text="12. 'Stick to foods that are as close to nature as possible,' says Yvonne McMeel. 'If you don't understand the ingredient list, avoid it. Think seasonal and organic foods instead.'"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

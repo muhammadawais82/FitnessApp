@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="logic2magic.com.health_fitness">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/health_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainPage"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splash_Screen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BMI_Activity"
+            android:label="@string/title_activity_bmi_"
+            android:parentActivityName=".MainPage"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="logic2magic.com.health_fitness.MainPage" />
+        </activity>
+        <activity
+            android:name=".BMR_Activity"
+            android:label="@string/title_activity_bmr_"
+            android:parentActivityName=".MainPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="logic2magic.com.health_fitness.MainPage" />
+        </activity>
+        <activity
+            android:name=".BFP_Activity"
+            android:label="@string/title_activity_bfp_"
+            android:parentActivityName=".MainPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="logic2magic.com.health_fitness.MainPage" />
+        </activity>
+        <activity
+            android:name=".IBW_Activity"
+            android:label="@string/title_activity_ibw_"
+            android:parentActivityName=".MainPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="logic2magic.com.health_fitness.MainPage" />
+        </activity>
+        <activity
+            android:name=".EBV_Activity"
+            android:label="@string/title_activity_ebv_"
+            android:parentActivityName=".MainPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="logic2magic.com.health_fitness.MainPage" />
+        </activity>
+
+        <service android:name=".StepCountingService" />
+
+        <activity
+            android:name=".DWI_Activity"
+            android:label="@string/title_activity_dwi_"
+            android:parentActivityName=".MainPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="logic2magic.com.health_fitness.MainPage" />
+        </activity>
+        <activity
+            android:name=".EWV_Activity"
+            android:label="@string/title_activity_ewv_"
+            android:parentActivityName=".MainPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="logic2magic.com.health_fitness.MainPage" />
+        </activity>
+        <activity
+            android:name=".RW_Activity"
+            android:label="@string/title_activity_rw_"
+            android:parentActivityName=".MainPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="logic2magic.com.health_fitness.MainPage" />
+        </activity>
+        <activity android:name=".STEP_COUNTER" />
+        <activity android:name=".Sign_in_EMP" />
+        <activity android:name=".SignUP_EMP" />
+        <activity android:name=".ADMIN"></activity>
+    </application>
+
+</manifest>
