@@ -10,6 +10,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v4.view.animation.LinearOutSlowInInterpolator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -80,6 +81,7 @@ public class STEP_COUNTER extends AppCompatActivity {
         init();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     public void init() {
 
         isServiceStopped = true; // variable for managing service state - required to invoke "stopService" only once to avoid Exception.

@@ -68,6 +68,7 @@
                 style="@style/sign"
                 android:hint="Confrom password"/>
 
+
             <LinearLayout
                 android:id="@+id/linearLayout2"
                 android:layout_width="wrap_content"
@@ -102,9 +103,35 @@
                 android:id="@+id/signup_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sign Up"/>
+                android:text="Sign Up"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/alreadyAcc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:text="I have already account"
+                    android:textColor="#fff"
+
+                    />
+
+                <TextView
+                    android:id="@+id/signin_up"
+                    android:layout_width="108dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sign In!"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10sp"/>
 
 
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

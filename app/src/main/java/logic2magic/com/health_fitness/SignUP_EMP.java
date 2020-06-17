@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import logic2magic.com.health_fitness.db.SQ_EMP;
 
@@ -17,6 +18,7 @@ public class SignUP_EMP extends AppCompatActivity {
 
 
     EditText name, email ,address , password ,confrom_password,number, cnic,degree,subject;
+    TextView tv;
     Button signup_btn;
 
     String str_job_type = null;
@@ -37,6 +39,8 @@ public class SignUP_EMP extends AppCompatActivity {
         password = findViewById(R.id.signup_password);
         number = findViewById(R.id.signup_no);
         cnic = findViewById(R.id.signup_cnic);
+        tv = findViewById(R.id.signin_up);
+
 
         signup_btn = findViewById(R.id.signup_btn);
 
@@ -46,6 +50,14 @@ public class SignUP_EMP extends AppCompatActivity {
 
 
 
+        tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SignUP_EMP.this, Sign_in_EMP.class);
+
+                startActivity(intent);
+            }
+        });
         signup_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
