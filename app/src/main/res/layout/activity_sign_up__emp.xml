@@ -127,8 +127,9 @@
                     android:layout_height="wrap_content"
                     android:text="Sign In!"
                     android:textColor="#fff"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="10sp"/>
+                    android:textStyle="italic"
+                    android:textAllCaps="true"
+                    android:layout_marginLeft="8sp"/>
 
 
             </LinearLayout>
